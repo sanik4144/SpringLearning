@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <bean class="in.sp.beans.Dateofbirth" id="dobId">
+        <constructor-arg value="21"/>
+        <constructor-arg value="December"/>
+        <constructor-arg value="2002"/>
+    </bean>
+
+    <bean class="in.sp.beans.Employee" id="empId">
+        <constructor-arg value="102"/>
+        <constructor-arg value="Anik"/>
+        <constructor-arg value="10233"/>
+        <constructor-arg ref="dobId"/>
+    </bean>
+</beans>

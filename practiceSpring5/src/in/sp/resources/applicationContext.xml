@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <bean class="in.sp.beans.Dateofbirth" id="dobId">
+        <property name="day" value="21"/>
+        <property name="month" value="December"/>
+        <property name="year" value="2001"/>
+    </bean>
+
+    <bean class="in.sp.beans.Employee" id="empId">
+        <property name="empId" value="101"/>
+        <property name="name" value="Anik"/>
+        <property name="salary" value="10000000"/>
+        <property name="dob" ref="dobId"/>
+    </bean>
+
+</beans>

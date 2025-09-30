@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Jar Files">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Jar Files/commons-logging-1.3.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Jar Files/spring-beans-7.0.0-M9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Jar Files/spring-context-7.0.0-M9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Jar Files/spring-core-7.0.0-M9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Jar Files/spring-expression-7.0.0-M9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Jar Files/spring-aop-7.0.0-M9.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
