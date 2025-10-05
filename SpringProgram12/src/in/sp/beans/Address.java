@@ -1,4 +1,28 @@
 package in.sp.beans;
 
 public class Address {
+    private int roadNo;
+    private String city;
+    private int pincode;
+
+    public void setRoadNo(int roadNo) {
+        this.roadNo = roadNo;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public void setPincode(int pincode) {
+        this.pincode = pincode;
+    }
+
+    @Override
+    public String toString() {
+        return "Address{" +
+                "roadNo=" + roadNo +
+                ", city='" + city + '\'' +
+                ", pincode=" + pincode +
+                '}';
+    }
 }

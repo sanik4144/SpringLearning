@@ -5,15 +5,9 @@ public class Student {
     private String name;
     private Address address;
 
-    public void setId(int id) {
+    public Student(int id, String name, Address address) {
         this.id = id;
-    }
-
-    public void setName(String name) {
         this.name = name;
-    }
-
-    public void setAddress(Address address) {
         this.address = address;
     }
 

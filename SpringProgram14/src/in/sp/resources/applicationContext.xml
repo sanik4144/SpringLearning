@@ -6,20 +6,20 @@
 
 <!--    <bean class="in.sp.beans.Address" id="addrId">-->
     <bean class="in.sp.beans.Address" autowire-candidate="false">
-        <property name="houseno" value="12"/>
-        <property name="city" value="Gazipur"/>
-        <property name="pincode" value="1234"/>
+        <constructor-arg value="12"/>
+        <constructor-arg value="Gazipur"/>
+        <constructor-arg value="1234"/>
     </bean>
     <bean class="in.sp.beans.Address">
-        <property name="houseno" value="15"/>
-        <property name="city" value="Dhaka"/>
-        <property name="pincode" value="1434"/>
+        <constructor-arg value="15"/>
+        <constructor-arg value="Dhaka"/>
+        <constructor-arg value="1434"/>
     </bean>
 
 
-    <bean class="in.sp.beans.Student" id="stdId" autowire="byType">
-        <property name="id" value="13"/>
-        <property name="name" value="Anik"/>
+    <bean class="in.sp.beans.Student" id="stdId" autowire="constructor">
+        <constructor-arg value="13" index="0"/>
+        <constructor-arg value="Anik" index="1"/>
 <!--        <property name="address" ref="addrId"/>-->
     </bean>
 

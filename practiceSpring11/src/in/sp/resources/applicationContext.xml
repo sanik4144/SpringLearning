@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="in.sp.beans.Expertise" id="exp">
+        <property name="exp" value="'OOP','Python','C++'"/>
+    </bean>
+    <bean class="in.sp.beans.Dateofbirth">
+        <property name="day" value="21"/>
+        <property name="month" value="December"/>
+        <property name="year" value="2001"/>
+    </bean>
+
+
+    <bean class="in.sp.beans.Employee" autowire="byType">
+        <property name="empId" value="124"/>
+        <property name="Name" value="Anik"/>
+<!--        <property name="dob" ref=""/>-->
+<!--        <property name="dob" ref=""/>-->
+    </bean>
+
+</beans>
